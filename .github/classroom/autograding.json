@@ -1,0 +1,14 @@
+{
+  "tests": [
+    {
+      "name": "landingpage",
+      "setup": "npm install",
+      "run": "npm test",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 60,
+      "points": 100
+    }
+  ]
+}
