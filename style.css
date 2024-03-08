@@ -1,0 +1,233 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+font-family:'Times New Roman', Times, serif Tahoma, sans-serif;
+background-color: #fffcf6;   
+
+}
+.hero_section{
+  height:100vh;
+  background-image: url("assets/plant.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.header_container{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.header_container .store_title{
+    padding: 5px;
+    font-size: 25px;
+    text-align: center;
+    color: #507947;
+    margin-right:50px ;
+}
+.list{
+    display:block; 
+    display: flex;
+    justify-content: space-between;
+    
+}
+.list li{
+    padding-left: 17px;
+    list-style: none;
+    color: #507947;  
+    font-size: 20px;
+    
+    
+}
+.list li:hover{
+    padding-left: 17px;
+    list-style:none;
+    color: #23bd00;  
+    text-decoration: underline;
+    font-size: 20px;
+    
+    
+}
+.header_container{
+    padding: 10px;
+    justify-content: center;
+    align-items: center;  
+}
+
+#icon{
+   display: none;  
+}
+.one{
+    justify-items: center;
+    display: grid;
+    grid-template-columns: repeat(1,90%);
+    
+}
+
+.card1,
+.card2,
+.card3,
+.card4{
+    margin: 10px;
+    height: 400px;
+    width: 300px;
+    border-radius: 10px;
+    border: 1px solid green;
+    background-color: #fffcf6;
+    text-align: center;
+    overflow: hidden;
+  }
+  .image{
+    height: 25vh;
+    width: auto;
+    object-fit: contain;
+    margin-top: 5px;
+    border-radius: 5px;
+  }
+  .info{
+    
+    height: 30vh;
+    width: auto;
+    background-color: wheat;
+    padding: 5px;
+}
+    .two{
+    display: grid;
+     margin: 10px;
+     justify-content: center;
+     width: 100%;
+    
+    }
+   .two .about{
+    
+    position: relative;
+   
+   }
+    .two .about .about_image{
+    width: 100%;
+    object-fit: cover;
+    margin-top: 5px;
+    
+    }
+    .two .about .about_description{
+        position: absolute;
+        bottom: 4px;
+        font-size: 20px;
+        overflow: hidden;  
+        background-color:rgba(70, 175, 72, 0.7);
+       color: white;
+    }
+    footer{
+        height: 50px;
+        background-color: #79a86e;  
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+.category,
+.about_title{
+    margin: 50px;
+    color: #507947;  
+    text-align: center;
+}
+footer .footerpara{
+    font-size: 35px;
+    padding: 5px;
+}
+    @media only screen and (min-width: 1200px){
+        .cards{
+        display: grid;
+        grid-template-columns:repeat(4,25%);
+        justify-items: center;
+    
+    }
+    .one{
+        justify-content: center;
+    }
+    
+    
+    }
+
+    @media only screen and (min-width: 701px) and (max-width: 1199px){
+        .cards{
+        width: 100%;
+        display: grid;
+        grid-template-columns:repeat(2,50%);
+        justify-items: center;
+        
+    }
+    .header_container .store_title{
+        font-size: 50px;  
+    }
+    .list li{
+        font-size: 30px;
+}
+.list li:hover{
+    
+    font-size: 30px;
+}
+
+.card1,
+.card2,
+.card3,
+.card4{
+    height: 500px;
+    width: 330px;
+}
+
+.one{
+    justify-content: center;
+}
+
+.info p{
+    font-size: 20px;
+}
+.two .about .about_description{
+    font-size: 30px;
+    text-align: center;
+    
+} 
+.category,
+.about_title{
+   font-size: 35px; 
+}   
+}
+
+
+    @media only screen and (max-width: 700px){
+        .hero_section{
+            height:50vh;
+            background-image: url("assets/plant.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+          }
+
+          .list{
+            display:none;
+        }
+        #icon{
+            display: block;
+            height:25px;
+            width:30px;
+            color: #507947;  
+            
+        }
+        .header_container{
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+    }
+    .one{
+        justify-content: center;
+    }
+    footer{
+        height: 50px;
+    }
+    footer .footerpara{
+        font-size: 20px;
+       
+    }
+}
+    
