@@ -7,32 +7,43 @@ font-family:'Times New Roman', Times, serif Tahoma, sans-serif;
 background-color: #fffcf6;   
 
 }
-.hero_section{
+.hero{
+  display: flex;
+  justify-content: space-between;
   height:100vh;
+  width: 100%;
   background-image: url("assets/plant.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  
 }
-.header_container{
-    padding: 10px;
+header{
     display: flex;
     justify-content: space-between;
 }
-.header_container .store_title{
-    padding: 5px;
-    font-size: 25px;
+header .store_title{
+  
+    font-size: 35px;
     text-align: center;
     color: #507947;
     margin-right:50px ;
+    margin-left: 20px;
+    margin-top: 20px;
 }
-.list{
+ul{
+    margin-right: 100px;
+    margin-top: 20px;
+    list-style: none;
     display:block; 
     display: flex;
     justify-content: space-between;
     
 }
-.list li{
+ul li a{
+    display: none;
+   margin-left: 20px;
+    text-decoration: none;
     padding-left: 17px;
     list-style: none;
     color: #507947;  
@@ -40,8 +51,8 @@ background-color: #fffcf6;
     
     
 }
-.list li:hover{
-    padding-left: 17px;
+ul li:hover{
+   
     list-style:none;
     color: #23bd00;  
     text-decoration: underline;
@@ -49,27 +60,37 @@ background-color: #fffcf6;
     
     
 }
-.header_container{
-    padding: 10px;
-    justify-content: center;
-    align-items: center;  
-}
 
-#icon{
-   display: none;  
+
+.burger-menu{
+   display: block;  
+   height: 30px;
+   width: 30px;
+   margin-top: 20px;
+   margin-right: 10px;
 }
 .one{
-    justify-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.category,
+.about_title{
+   margin-top: 20px;
+   margin-bottom: 20px;
+   font-size: 35px;
+    color: #507947;  
+    text-align: center;
+}
+.cards{
     display: grid;
     grid-template-columns: repeat(1,90%);
-    
+    place-content: center;
+    row-gap: 10px;
 }
-
-.card1,
-.card2,
-.card3,
-.card4{
-    margin: 10px;
+.card{
+ 
     height: 400px;
     width: 300px;
     border-radius: 10px;
@@ -119,115 +140,27 @@ background-color: #fffcf6;
        color: white;
     }
     footer{
+        width: 100%;
         height: 50px;
         background-color: #79a86e;  
         display: flex;
         justify-content: center;
         align-items: center;
       }
-.category,
-.about_title{
-    margin: 50px;
-    color: #507947;  
-    text-align: center;
-}
+
 footer .footerpara{
     font-size: 35px;
     padding: 5px;
 }
-    @media only screen and (min-width: 1200px){
-        .cards{
-        display: grid;
-        grid-template-columns:repeat(4,25%);
-        justify-items: center;
-    
-    }
-    .one{
-        justify-content: center;
-    }
-    
-    
-    }
-
-    @media only screen and (min-width: 701px) and (max-width: 1199px){
-        .cards{
-        width: 100%;
-        display: grid;
-        grid-template-columns:repeat(2,50%);
-        justify-items: center;
-        
-    }
-    .header_container .store_title{
-        font-size: 50px;  
-    }
-    .list li{
-        font-size: 30px;
+@media only screen and (min-width: 900px){
+    ul li a{
+        display: block;}
+        .burger-menu{
+            display: none;  }
+            .cards{
+                display: grid;
+                grid-template-columns: repeat(2,50%);
+                place-content: center;
+                column-gap: 10px;
+            }
 }
-.list li:hover{
-    
-    font-size: 30px;
-}
-
-.card1,
-.card2,
-.card3,
-.card4{
-    height: 500px;
-    width: 330px;
-}
-
-.one{
-    justify-content: center;
-}
-
-.info p{
-    font-size: 20px;
-}
-.two .about .about_description{
-    font-size: 30px;
-    text-align: center;
-    
-} 
-.category,
-.about_title{
-   font-size: 35px; 
-}   
-}
-
-
-    @media only screen and (max-width: 700px){
-        .hero_section{
-            height:50vh;
-            background-image: url("assets/plant.jpg");
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center;
-          }
-
-          .list{
-            display:none;
-        }
-        #icon{
-            display: block;
-            height:25px;
-            width:30px;
-            color: #507947;  
-            
-        }
-        .header_container{
-            padding: 10px;
-            display: flex;
-            justify-content: space-between;
-    }
-    .one{
-        justify-content: center;
-    }
-    footer{
-        height: 50px;
-    }
-    footer .footerpara{
-        font-size: 20px;
-       
-    }
-}
-    
